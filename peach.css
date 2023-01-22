@@ -139,12 +139,16 @@ h2 {
   background-color: var(--dark-theme);
   color: black;
   position: fixed;
+  right: 0;
+  border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
   transition: 0.3s;
-  width: 100vw;
+  width: 0vw;
   height: 0vh;
-  display: block;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
+
   gap: 1em;
   z-index: 2;
   overflow: hidden;
@@ -179,18 +183,17 @@ h2 {
   overflow: visible;
 }
 .Topinfo {
-  margin: 0 auto;
-  margin-top: 1rem;
-  width: 60%;
-  height: 30%;
-
+margin-top: -3rem;
+  width: 250px;
+  height: 275px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  padding: 0;
   font-family: "Poppins", sans-serif;
   font-size: 1.8em;
+  margin-right: 10px;
   color: rgb(19, 0, 0);
 
 }
@@ -202,55 +205,29 @@ h2 {
   animation: imgHovering 2s ease-in-out infinite;
 }
 
-.topsocial {
-  display: flex;
-  justify-content: center;
-}
-
-.topsocial .bi {
-  margin: 1%;
-  padding: 0.5em 0.7em;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--dark-theme-bodyparts);
-  font-size: 1.3em;
-  color: black;
-}
-
-.topsocial a {
-  margin: 1%;
-  border-radius: 50%;
-}
-
-.topsocial .bi:hover {
-  transition: 0.1s;
-  color: black;
-  background-color: orange;
-}
 
 .topnavItems {
-  width: 100%;
-  height: 30%;
-
+ width: 28%;
+  height: 40%;
+  margin-right: 10px;
   display: flex;
-  justify-content: center;
-
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
-
-  margin-top: 2em;
 }
 
 .topnavItems a {
   text-decoration: none;
   color: black;
-  text-align: center;
-  margin: 2% auto;
+ text-align: left;
+  margin: 10px;
   font-size: 1.3rem;
 }
 
 .topnavItems a:hover {
-  width: 100%;
+ text-indent: 10px;
+  width: 150px;
+  border-radius: 20px;
   background-color: orange !important;
   transition: 0.5s;
   cursor: pointer;
@@ -263,6 +240,14 @@ h2 {
 
 .Top {
   margin: 1rem auto;
+}
+
+
+ .themecontainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
 /* navBar */
@@ -394,6 +379,7 @@ z-index: 10;
   color: white;
   font-size: 25px;
   padding-bottom: 10px;
+  padding: 0;
 }
 
 .bi-sun {
@@ -511,7 +497,10 @@ z-index: 10;
 }
 
 .navItems a:hover {
-  transition: 0.2s;
+  text-indent: 10px;
+  width: 150px;
+  border-radius: 20px;
+  transition: 0.5s;
   cursor: pointer;
   word-spacing: 6px;
   background-color: orange;
