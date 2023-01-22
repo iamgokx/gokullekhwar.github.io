@@ -131,12 +131,13 @@ h2 {
 
 /*top nav*/
 #topNav {
+  transition: 0.8s;
   background-color: var(--dark-theme);
   
   position: fixed;
   right: 0;
   border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
-  transition: 0.3s;
+
   width: 0vw;
   height: 0vh;
   display: flex;
