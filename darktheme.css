@@ -131,13 +131,13 @@ h2 {
 
 .revealSide{
   position:relative;
-  transform: translateX(150px);
+  transform: translateX(25px);
   opacity: 0;
   transition: 1s all ease;
 }
 
 .revealSide.activeSide{
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
 }
 

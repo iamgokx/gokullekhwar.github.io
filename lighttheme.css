@@ -134,14 +134,17 @@
 
   .revealSide{
     position:relative;
-    transform: translateX(150px);
+    transform: translateX(25px);
     opacity: 0;
+    overflow-x: hidden;
     transition: 1s all ease;
+    overflow-x:hidden;
   }
   
   .revealSide.activeSide{
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
+    
   }
   
   /*top nav*/
