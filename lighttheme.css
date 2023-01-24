@@ -131,6 +131,18 @@
     transform: translateY(0);
     opacity: 1;
   }
+
+  .revealSide{
+    position:relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .revealSide.activeSide{
+    transform: translateY(0);
+    opacity: 1;
+  }
   
   /*top nav*/
   #topNav {
