@@ -129,16 +129,33 @@ h2 {
   opacity: 1;
 }
 
+.revealSide{
+  position:relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.revealSide.activeSide{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+
+
+
+
 /*top nav*/
 #topNav {
-  transition: 0.8s;
+  transition: 0.5s;
   background-color: var(--dark-theme);
-  
+
   position: fixed;
   right: 0;
   border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
 
-  width: 0vw;
+  width: 0px;
   height: 0vh;
   display: flex;
   flex-direction: column;
@@ -149,6 +166,7 @@ h2 {
   z-index: 2;
   overflow: hidden;
 }
+
 
 @media only screen and (max-width: 600px) {
   body {
@@ -181,7 +199,7 @@ h2 {
 }
 
 .Topinfo {
-  margin-top: -3rem;
+  margin-top: 1rem;
   width: 250px;
   height: 275px;
   display: flex;
@@ -193,7 +211,6 @@ h2 {
   font-size: 1.8em;
   color: ghostwhite;
   margin-right: 10px;
-  animation: lights 5s 750ms linear infinite;
 }
 
 .Topinfo img {
@@ -204,21 +221,20 @@ h2 {
 }
 
 .topnavItems {
-  width: 28%;
-  height: 40%;
+  margin-top: -20px;
+  width: 11rem;
+  height: auto;
   margin-right: 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+  display: block;
 }
 
 .topnavItems a {
+  display: block;
   text-decoration: none;
   color: var(--nav-dark-theme-font);
   text-align: left;
-  margin: 10px;
-  font-size: 1.3rem;
+  margin: 25px;
+  font-size: 1.4rem;
 }
 
 .topnavItems a:hover {
@@ -240,13 +256,12 @@ h2 {
   margin: 1rem auto;
 }
 
-.themecontainer{
+.themecontainer {
   width: 100%;
   display: flex;
   align-items: center;
   margin: 0 auto;
 }
-
 
 /* navBar */
 .rights {
@@ -397,6 +412,7 @@ h2 {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  animation: none;
 }
 
 .darkblue {
@@ -574,7 +590,7 @@ h2 {
 
 @keyframes lights {
   0% {
-    color: hsl(219, 76%, 56%);
+    color: hsl(221, 100%, 86%);
     text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2),
       0 0 0.125em hsla(320, 100%, 60%, 0.3),
       -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
@@ -582,7 +598,7 @@ h2 {
   }
 
   30% {
-    color: hsl(230, 86%, 77%);
+    color: hsl(230, 100%, 77%);
     text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
       0 0 0.125em hsla(320, 100%, 60%, 0.5),
       -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
@@ -725,7 +741,7 @@ h2 {
 
 .services {
   font-family: "manrope", sans-serif;
-  font-size: 0.93em;
+  font-size: 20px;
   border-left: 3px solid var(--dark-theme-border-bottom);
   padding: 1rem;
   background-color: var(--dark-theme);

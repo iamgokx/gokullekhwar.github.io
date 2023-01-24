@@ -141,7 +141,7 @@ h2 {
   position: fixed;
   right: 0;
   border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
-  transition: 0.8s;
+  transition: 0.5s;
   width: 0vw;
   height: 0vh;
   display: flex;
@@ -153,6 +153,11 @@ h2 {
   z-index: 2;
   overflow: hidden;
 }
+
+#name{
+  animation: none !important;
+}
+
 
 @media only screen and (max-width: 600px) {
   body {
@@ -183,7 +188,7 @@ h2 {
   overflow: visible;
 }
 .Topinfo {
-margin-top: -3rem;
+margin-top: 1rem;
   width: 250px;
   height: 275px;
   display: flex;
@@ -207,21 +212,22 @@ margin-top: -3rem;
 
 
 .topnavItems {
- width: 28%;
-  height: 40%;
+  width: 11rem;
+  height: auto;
   margin-right: 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+display: block;
+margin-top: -20px;
+
 }
 
 .topnavItems a {
+  display: block;
   text-decoration: none;
   color: black;
  text-align: left;
-  margin: 10px;
-  font-size: 1.3rem;
+ margin: 25px;
+ font-size: 1.4rem;
+
 }
 
 .topnavItems a:hover {

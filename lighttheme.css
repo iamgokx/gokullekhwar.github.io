@@ -139,7 +139,7 @@
     position: fixed;
   right: 0;
   border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
-  transition: 0.8s;
+  transition: 0.5s;
   width: 0vw;
   height: 0vh;
   display: flex;
@@ -150,6 +150,10 @@
   gap: 1em;
   z-index: 2;
   overflow: hidden;
+  }
+
+  #name{
+    animation: none !important;
   }
   
   @media only screen and (max-width: 600px) {
@@ -181,7 +185,7 @@
     overflow: visible;
   }
   .Topinfo {
-  margin-top: -3rem;
+  margin-top: 1rem;
   width: 250px;
   height: 275px;
   display: flex;
@@ -193,9 +197,10 @@
   font-size: 1.8em;
   color: ghostwhite;
   margin-right: 10px;
-  animation: lights 5s 750ms linear infinite;
 
   }
+
+
   
   .Topinfo img {
     width: 150px;
@@ -207,21 +212,20 @@
  
   
   .topnavItems {
- width: 28%;
-  height: 40%;
-  margin-right: 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+    margin-top: -20px;
+    width: 11rem;
+    height: auto;
+    margin-right: 10px;
+  display: block;
   }
   
   .topnavItems a {
+    display: block;
   text-decoration: none;
   color: var(--nav-dark-theme-font);
   text-align: left;
-  margin: 10px;
-  font-size: 1.3rem;
+  margin: 25px;
+  font-size: 1.4rem;
   }
   
   .topnavItems a:hover {
@@ -579,7 +583,7 @@ padding: 0;
   
   @keyframes lights {
     0% {
-      color: hsl(0, 100%, 67%);
+      color: hsl(0, 96%, 72%);
       text-shadow: 0 0 1em hsla(27, 100%, 50%, 0.2),
         0 0 0.125em hsla(320, 100%, 60%, 0.3),
         -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),

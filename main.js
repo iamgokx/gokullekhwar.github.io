@@ -35,26 +35,27 @@ document
   .getElementById("iconTopNav")
   .addEventListener("click", function toggleTopNav() {
     if (toggleStatusTop == 1) {
-      document.getElementById("topNav").style.height = "0";
-      document.getElementById("topNav").style.width = "0";
+      document.getElementById("topNav").style.opacity = "0";
+      document.getElementById("topNav").style.height = "0px";
+      document.getElementById("topNav").style.width = "0px";
+      document.getElementById("name").style.animation = "none";
       toggleStatusTop = 0;
     } else if (toggleStatusTop == 0) {
       document.getElementById("topNav").style.height = "600px";
       document.getElementById("topNav").style.width = "600px";
+      setTimeout(function() {
+        document.getElementById("topNav").style.opacity = "1";
+      }, 200);
+      setTimeout(function() {
+        document.getElementById("name").style.animation = " lights 5s 750ms linear infinite";
+      }, 200);
+      
       toggleStatusTop = 1;
     }
   });
 
-// document.getElementById('iconTopNav').addEventListener('click', function toggleTopNav() {
-//   if (toggleStatusTop == 1) {
-//     document.getElementById("topNav").style.height = "0vh";
-//     toggleStatusTop = 0;
-//   } else if (toggleStatusTop == 0) {
-//     document.getElementById("topNav").style.height = "100vh";
-//     toggleStatusTop = 1;
-//   }
-// })
 
+  
 // top nav bar toggle off on anchor click
 function navClick() {
   document.getElementById("topNav").style.height = "0vh";
@@ -117,13 +118,18 @@ document.getElementById("greythemetop").addEventListener("click", () => {
   document.getElementById("pagestyle").setAttribute("href", "greytheme.css");
 });
 
+
+
+
+//reveal on scroll
+
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+    var elementVisible = -150;
 
     if (elementTop < windowHeight - elementVisible) {
       reveals[i].classList.add("active");
@@ -133,15 +139,26 @@ function reveal() {
   }
 }
 
+
 window.addEventListener("scroll", reveal);
 
-let cardDiv = document.getElementById("card-items");
-let twoBtns = document.getElementById("btns");
 
-function displayCardItems() {
-  twoBtns.style.display = "block";
+function revealSide() {
+  var reveals = document.querySelectorAll(".revealSide");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("activeSide");
+    } else {
+      return;
+    }
+  }
 }
 
-function returnCardItems() {
-  twoBtns.style.display = "none";
-}
+window.addEventListener("scroll", revealSide);
+
+
