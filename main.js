@@ -163,3 +163,30 @@ function revealSide() {
 window.addEventListener("scroll", revealSide);
 
 
+//nav active link 
+
+
+function activelink() {
+  var reveals = document.querySelectorAll(".activeTab");
+  var activenavlink = document.querySelectorAll(".activesidenavlink");
+
+  for (var i = 1; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    let flag = 0;
+    if (elementTop < windowHeight - elementVisible) {
+      activenavlink[i].classList.add("activeLoad");
+      flag=1;
+      if(flag==1){
+        activenavlink[i-1].classList.remove("activeLoad")
+      }else{
+        return;
+      }
+    } else {
+      activenavlink[i].classList.remove("activeLoad");
+    }
+  }
+}
+
+window.addEventListener("scroll", activelink);

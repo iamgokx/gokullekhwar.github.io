@@ -82,11 +82,11 @@
 
     <div class="navItems">
 
-      <a href="#home"><i class="bi bi-house"></i> Home</a>
-      <a href="#about"><i class="bi bi-person"></i> About</a>
-      <a href="#resume"><i class="bi bi-file-earmark-person"></i> Resume</a>
-      <a href="#project"><i class="bi bi-card-text"></i> Projects</a>
-      <a href="#connect"><i class="bi bi-envelope"></i> Connect</a>
+      <a class="activesidenavlink activeLoad" href="#home"><i class="bi bi-house" ></i> Home</a>
+      <a class="activesidenavlink" href="#about"><i class="bi bi-person"></i> About</a>
+      <a class="activesidenavlink" href="#resume"><i class="bi bi-file-earmark-person"></i> Resume</a>
+      <a class="activesidenavlink" href="#project"><i class="bi bi-card-text"></i> Projects</a>
+      <a class="activesidenavlink" href="#connect"><i class="bi bi-envelope"></i> Connect</a>
 
     </div>
 
@@ -120,7 +120,7 @@
           <i class="bi bi-sun" id="topsun"></i>
           <i class="bi bi-moon" id="topmoon"></i>
         </div>
-    
+
         <div class="themestop themes">
           <div class="darkblue" id="darkbluethemetop"></div>
           <div class="orange" id="orangethemetop"></div>
@@ -130,7 +130,7 @@
     </div>
 
 
-    
+
     <div class="topnavItems">
       <a href="#home" onclick="navClick()"><i class="bi bi-house"></i> Home</a>
       <a href="#about" onclick="navClick()"><i class="bi bi-person"></i> About</a>
@@ -140,7 +140,7 @@
     </div>
 
 
-     
+
 
 
 
@@ -152,7 +152,7 @@
   <!-- home page / main page -->
 
 
-  <div class="homePage" id="home">
+  <div class="homePage activeTab" id="home">
     <div class="greetings">
       <p id="p" class="animationp">Hey, i'm </p>
       <div class="wrapper">
@@ -169,7 +169,7 @@
 
   <main id="mainbody">
     <!-- about me  -->
-    <section class="aboutMe main" id="about">
+    <section class="aboutMe main activeTab" id="about">
       <h2 class="reveal">About</h2>
       <p class="reveal">Hi there! My name is Gokul and I am a web developer. I specialize in <span
           style="font-family: raleway;">HTML, CSS, BOOTSTRAP and JAVASCRIPT, </span>
@@ -196,20 +196,22 @@
         <img class="revealSide" src="about.jpg" alt="">
         <div class="bioData">
           <header class="reveal">Web-Developer</header>
-          <p class="reveal introNote ">I'm still a newbie when it comes to web design, but I'm eager to learn more.I enjoy
+          <p class="reveal introNote ">I'm still a newbie when it comes to web design, but I'm eager to learn more.I
+            enjoy
             learning new things, too.
           </p>
 
           <div class="data">
             <div class="data1">
               <p class="revealSide"><i class="bi bi-arrow-return-right"></i><span>Birthdate:</span> 19 jan 2003</p>
-              <p class="revealSide"><i class="bi bi-arrow-return-right"></i><span>Age:</span>19</p>
+              <p class="revealSide"><i class="bi bi-arrow-return-right"></i><span>Age:</span>20</p>
               <p class="revealSide"><i class="bi bi-arrow-return-right"></i><span>website:</span><a class="webLink"
                   href="https://iamgokx.github.io/gokullekhwar.github.io/" target="_blank">gokullekhwar.github</a></p>
             </div>
             <div class="data2">
               <p class="revealSide"><i class="bi bi-arrow-return-right"></i><span>Degree:</span>BCA</p>
-              <p class="revealSide"><i class="bi bi-arrow-return-right"></i><span>Email:</span>lekhwargokul84@gmail.com</p>
+              <p class="revealSide"><i class="bi bi-arrow-return-right"></i><span>Email:</span> <a class="webLink"
+                  href="mailto: lekhwargokul84@gmail.com" target="_blank">lekhwargokul84@gmail.com</a></p>
               <p class="revealSide"><i class="bi bi-arrow-return-right"></i><span>Country:</span>India</p>
             </div>
           </div>
@@ -263,7 +265,7 @@
       </div>
     </section>
 
-    <section class="resume main" id="resume">
+    <section class="resume main activeTab" id="resume">
       <h2 class="reveal">Resume</h2>
       <p class="reveal">As a web developer, I have a good foundation in <span style="font-family: raleway;">HTML, CSS,
           BOOTSTRAP and JAVASCRIPT</span> and a passion for
@@ -285,7 +287,7 @@
 
           <ul class="reveal">
             <li>Goa, India</li>
-            <li>(91) 0123-456-789</li>
+
             <li>lekhwargokul84@gmail.com</li>
           </ul>
         </div>
@@ -300,7 +302,7 @@
     </section>
 
     <!-- projects -->
-    <section class="projectSec" id="project">
+    <section class="projectSec activeTab" id="project">
       <h2 class="reveal">Projects</h2>
 
       <div class="grid">
@@ -375,7 +377,7 @@
   </main>
 
 
-  <footer class="connect" id="connect">
+  <footer class="connect activeTab" id="connect">
     <header>Let's work together!</header>
     <p>where can we have a cup of coffee...</p>
 
@@ -408,6 +410,3 @@
 </body>
 
 </html>
-
-
-
