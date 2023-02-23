@@ -32,6 +32,8 @@ function moveLeft() {
 // top nav bar toggle
 var toggleStatusTop = 0;
 
+
+
 document
   .getElementById("iconTopNav")
   .addEventListener("click", function toggleTopNav() {
@@ -40,6 +42,9 @@ document
       document.getElementById("topNav").style.height = "0px";
       document.getElementById("topNav").style.width = "0px";
       document.getElementById("name").style.animation = "none";
+      for(let i = 0 ; i< links.length; i++){
+        links[i].classList.remove("linkanimated");
+      }
       toggleStatusTop = 0;
     } else if (toggleStatusTop == 0) {
       document.getElementById("topNav").style.height = "600px";
@@ -50,10 +55,11 @@ document
       setTimeout(function() {
         document.getElementById("name").style.animation = " lights 5s 750ms linear infinite";
       }, 200);
-      
+
       toggleStatusTop = 1;
     }
   });
+
 
 
   

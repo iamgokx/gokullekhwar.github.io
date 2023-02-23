@@ -11,6 +11,7 @@
   --dark-theme-border-bottom: gold;
   --data-ui: rgba(255, 217, 0, 0.664);
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -129,22 +130,17 @@ h2 {
   opacity: 1;
 }
 
-.revealSide{
-  position:relative;
+.revealSide {
+  position: relative;
   transform: translateX(25px);
   opacity: 0;
   transition: 1s all ease;
 }
 
-.revealSide.activeSide{
+.revealSide.activeSide {
   transform: translateX(0);
   opacity: 1;
 }
-
-
-
-
-
 
 /*top nav*/
 #topNav {
@@ -166,7 +162,6 @@ h2 {
   z-index: 2;
   overflow: hidden;
 }
-
 
 @media only screen and (max-width: 600px) {
   body {
@@ -226,6 +221,19 @@ h2 {
   height: auto;
   margin-right: 10px;
   display: block;
+}
+
+@keyframes linkanimation {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.linkanimated {
+  animation: linkanimation 0.5s ease-in-out 1;
 }
 
 .topnavItems a {
@@ -492,7 +500,7 @@ h2 {
   margin-top: 2em;
 }
 
-.activeLoad{
+.activeLoad {
   text-indent: 10px;
   width: 150px;
   border-radius: 20px;
@@ -1087,21 +1095,87 @@ figure.effect-goliath:hover p {
 
 /* footer */
 
+.sec1,
+.sec2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .connect {
   width: 100vw;
-  height: 60vh;
+  /* height: 60vh; */
   background-color: var(--dark-theme);
-
+  padding-bottom: 5rem;
+  padding-top: 4rem;
   margin: 0 auto;
   margin-top: 4rem;
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 
   color: var(--dark-theme-font);
 }
+
+@media only screen and (max-width: 1182px) {
+  .connect {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+
+form {
+  width: 100%;
+  background-color: var(--dark-theme-bodyparts);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ border-radius: 20px;
+}
+
+
+
+.sec2 input{
+  color: white;
+  width: 90%;
+  background-color: var(--dark-theme);
+  outline: none;
+  border: none;
+  margin: 10px;
+
+  font-family: 'Manrope', sans-serif;
+}
+
+#textarea{
+  color:white ;
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: var(--dark-theme);
+  font-family: 'Manrope', sans-serif;
+
+}
+
+.button{
+  background-color: var(--dark-theme);
+  font-family: 'Manrope', sans-serif;
+  scale: 1.2;
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 45%;
+  color: white;
+}
+
+#plane{
+  font-size: 20px;
+  border-radius: 50%;
+}
+
 
 .connect header {
   font-size: 3em;
