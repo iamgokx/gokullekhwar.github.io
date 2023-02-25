@@ -994,6 +994,9 @@ h3 {
 figure.effect-goliath {
   /* background: #df4e4e; */
   background: var(--dark-theme);
+  -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.527);
+  -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.555);
+  box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.582);
 }
 
 figure.effect-goliath img,
@@ -1098,6 +1101,9 @@ form {
   align-items: center;
   justify-content: center;
  border-radius: 20px;
+ -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.973);
+ -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.815);
+ box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.849);
 }
 
 
@@ -1132,6 +1138,9 @@ form {
   padding: 10px;
   border-radius: 45%;
   color: white;
+  -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.527);
+  -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.555);
+  box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.582);
 }
 
 #plane{

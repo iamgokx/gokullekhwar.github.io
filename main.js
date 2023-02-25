@@ -2,7 +2,6 @@
 
 var toggleStatus = 1;
 
-
 document.getElementById("icon").addEventListener("click", function toggleNav() {
   if (toggleStatus == 1) {
     document.getElementById("hide").style.height = "100vh";
@@ -32,8 +31,6 @@ function moveLeft() {
 // top nav bar toggle
 var toggleStatusTop = 0;
 
-
-
 document
   .getElementById("iconTopNav")
   .addEventListener("click", function toggleTopNav() {
@@ -42,34 +39,27 @@ document
       document.getElementById("topNav").style.height = "0px";
       document.getElementById("topNav").style.width = "0px";
       document.getElementById("name").style.animation = "none";
-      for(let i = 0 ; i< links.length; i++){
-        links[i].classList.remove("linkanimated");
-      }
       toggleStatusTop = 0;
     } else if (toggleStatusTop == 0) {
       document.getElementById("topNav").style.height = "600px";
       document.getElementById("topNav").style.width = "600px";
-      setTimeout(function() {
+      setTimeout(function () {
         document.getElementById("topNav").style.opacity = "1";
       }, 200);
-      setTimeout(function() {
-        document.getElementById("name").style.animation = " lights 5s 750ms linear infinite";
+      setTimeout(function () {
+        document.getElementById("name").style.animation =
+          " lights 5s 750ms linear infinite";
       }, 200);
-
       toggleStatusTop = 1;
     }
   });
 
-
-
-  
 // top nav bar toggle off on anchor click
 function navClick() {
   document.getElementById("topNav").style.height = "0vh";
   document.getElementById("topNav").style.width = "0vh";
   toggleStatusTop = 0;
 }
-
 
 //toggle theme
 let theme = 1;
@@ -125,9 +115,6 @@ document.getElementById("greythemetop").addEventListener("click", () => {
   document.getElementById("pagestyle").setAttribute("href", "greytheme.css");
 });
 
-
-
-
 //reveal on scroll
 
 function reveal() {
@@ -146,9 +133,7 @@ function reveal() {
   }
 }
 
-
 window.addEventListener("scroll", reveal);
-
 
 function revealSide() {
   var reveals = document.querySelectorAll(".revealSide");
@@ -168,9 +153,7 @@ function revealSide() {
 
 window.addEventListener("scroll", revealSide);
 
-
-//nav active link 
-
+//nav active link
 
 // function activelink() {
 //   var reveals = document.querySelectorAll(".activeTab");
@@ -190,8 +173,6 @@ window.addEventListener("scroll", revealSide);
 //         return;
 //       }
 
-
-
 //     } else {
 //       activenavlink[i].classList.remove("activeLoad");
 //     }
@@ -199,6 +180,3 @@ window.addEventListener("scroll", revealSide);
 // }
 
 // window.addEventListener("scroll", activelink);
-
-
-

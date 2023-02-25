@@ -1007,6 +1007,9 @@ h3 {
 figure.effect-goliath {
   /* background: #df4e4e; */
   background: var(--dark-theme);
+  -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.527);
+  -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.555);
+  box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.582);
 }
 
 figure.effect-goliath img,
@@ -1104,6 +1107,7 @@ figure.effect-goliath:hover p {
 
 form {
   width: 100%;
+  
   background-color: #58a6ad;
   padding: 1rem;
   display: flex;
@@ -1111,14 +1115,17 @@ form {
   align-items: center;
   justify-content: center;
  border-radius: 20px;
+ -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.527);
+ -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.555);
+ box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.582);
 }
 
 
 
 .sec2 input{
-  color: white;
   width: 90%;
   background-color: #4c9399;
+  color: white;
   outline: none;
   border: none;
   margin: 10px;
@@ -1144,6 +1151,9 @@ form {
   padding: 10px;
   border-radius: 45%;
   color: white;
+  -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.527);
+  -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.555);
+  box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.582);
 }
 
 #plane{
