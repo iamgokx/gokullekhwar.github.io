@@ -35,16 +35,19 @@ document
   .getElementById("iconTopNav")
   .addEventListener("click", function toggleTopNav() {
     if (toggleStatusTop == 1) {
-      document.getElementById("topNav").style.opacity = "0";
-      document.getElementById("topNav").style.height = "0px";
-      document.getElementById("topNav").style.width = "0px";
+      // document.getElementById("topNav").style.opacity = "0";
+      // document.getElementById("topNav").style.height = "0px";
+      // document.getElementById("topNav").style.width = "0px";
+      document.getElementById("topNav").style.scale = "0";
+  
       document.getElementById("name").style.animation = "none";
       toggleStatusTop = 0;
     } else if (toggleStatusTop == 0) {
-      document.getElementById("topNav").style.height = "600px";
-      document.getElementById("topNav").style.width = "600px";
+      // document.getElementById("topNav").style.height = "600px";
+      // document.getElementById("topNav").style.width = "600px";
+      document.getElementById("topNav").style.scale = "1";
       setTimeout(function () {
-        document.getElementById("topNav").style.opacity = "1";
+        // document.getElementById("topNav").style.opacity = "1";
       }, 200);
       setTimeout(function () {
         document.getElementById("name").style.animation =
