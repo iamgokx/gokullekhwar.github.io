@@ -145,18 +145,19 @@ h2 {
 
 /*top nav*/
 #topNav {
-  transition: 0.5s;
   background-color: var(--dark-theme);
-
+  
   position: fixed;
   right: 0;
   border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
-
+  
+  transition: 0.5s;
+  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
   width: 600px;
   height: 600px;
-
   transform-origin: top right;
   scale: 0;
+  
 
   
 

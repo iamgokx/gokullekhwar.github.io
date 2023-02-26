@@ -29,6 +29,7 @@ function moveLeft() {
 }
 
 // top nav bar toggle
+//updated from increaseing width and height to scaling because it was smoother when compared 
 var toggleStatusTop = 0;
 
 document
@@ -59,8 +60,9 @@ document
 
 // top nav bar toggle off on anchor click
 function navClick() {
-  document.getElementById("topNav").style.height = "0vh";
-  document.getElementById("topNav").style.width = "0vh";
+  // document.getElementById("topNav").style.height = "0vh";
+  // document.getElementById("topNav").style.width = "0vh";
+  document.getElementById("topNav").style.scale = "0";
   toggleStatusTop = 0;
 }
 
