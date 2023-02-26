@@ -165,6 +165,10 @@
   gap: 1em;
   z-index: 2;
   overflow: hidden;
+
+  -webkit-box-shadow: -20px 21px 57px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: -20px 21px 57px -10px rgba(0,0,0,0.57);
+box-shadow: -20px 21px 57px -10px rgba(0,0,0,0.57);
   }
 
   #name{
@@ -198,6 +202,11 @@
   
     z-index: 4;
     overflow: visible;
+
+    animation: btnblink 5s ease infinite;
+    -webkit-box-shadow: 10px 10px 36px 3px rgba(0, 0, 0, 0.603);
+    -moz-box-shadow: 10px 10px 36px 3px rgba(0, 0, 0, 0.527);
+    box-shadow: 10px 10px 36px 3px rgba(0, 0, 0, 0.507);
   }
   .Topinfo {
   margin-top: 1rem;
@@ -300,6 +309,10 @@
     color: var(--dark-theme-font);
     display: flex;
 flex-direction: column;
+
+-webkit-box-shadow: 21px 13px 57px -10px rgba(0,0,0,0.41);
+-moz-box-shadow: 21px 13px 57px -10px rgba(0,0,0,0.41);
+box-shadow: 21px 13px 57px -10px rgba(0,0,0,0.41);
   }
   
   #hide {
@@ -360,6 +373,24 @@ flex-direction: column;
     align-items: center;
   z-index: 10;
     overflow: hidden;
+
+    animation: btnblink 5s ease infinite;
+    -webkit-box-shadow: 10px 10px 36px 3px rgba(0, 0, 0, 0.603);
+    -moz-box-shadow: 10px 10px 36px 3px rgba(0, 0, 0, 0.527);
+    box-shadow: 10px 10px 36px 3px rgba(0, 0, 0, 0.507);
+  }
+
+  
+@keyframes btnblink{
+  0%{
+    background-color:#ff54368e ;
+  }
+  50%{
+    background-color: #ff5436;
+  }
+  100%{
+    background-color: #ff54368e ;
+  }
   }
   
   .info:hover {
@@ -705,6 +736,20 @@ padding: 0;
     padding: 2%;
 
   }
+
+  .services {
+    font-family: "manrope", sans-serif;
+    font-size: 20px;
+    border-left: 3px solid var(--dark-theme-border-bottom);
+    padding: 1rem;
+    background-color: var(--data-ui);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .services li {
+    margin-left: 20px;
+  }
   
   .aboutMe {
     padding: 2%;
@@ -756,6 +801,7 @@ padding: 0;
     margin-top: 3%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
   }
   
   .data {
@@ -1204,12 +1250,21 @@ form {
     padding: 0.3em 0.5em;
     border-radius: 50%;
     transition: 0.3s;
+
+
   }
 
   .footerSocial .bi {
     background-color: white;
     color:var(--dark-theme);
+  }
 
+  .footerSocial a {
+    padding: 2px 5px 5px 5px;
+    border-radius: 50%;
+    -webkit-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
+  -moz-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
+  box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
   }
   
   @media only screen and (max-width: 600px) {
@@ -1311,7 +1366,7 @@ form {
   }
   .connect i:hover {
     color:white;
-    box-shadow: inset 200px 0 0 0 rgb(129, 89, 15);
+    box-shadow: inset 200px 0 0 0 rgb(255, 216, 142);
   }
   
   .connect i {
