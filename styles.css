@@ -16,6 +16,20 @@
   box-sizing: border-box;
 }
 
+body::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-track{
+  background:#242424;
+  
+}
+body::-webkit-scrollbar-thumb{
+background: white;
+
+}
+
 #mainbody {
   padding: 0;
   transition: 0.5s;
@@ -726,6 +740,7 @@ font-size: 20px; */
 }
 
 .services li {
+  margin: 10px;
   margin-left: 20px;
 }
 
@@ -886,10 +901,14 @@ h2 {
   font-size: 15px;
 }
 
+
 .progress {
   margin: 10px;
-  background-color:white;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  background-color: white;
 }
+
 
 .progress-bar {
   background-color: var(--data-ui);

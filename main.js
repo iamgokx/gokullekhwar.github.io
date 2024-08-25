@@ -71,7 +71,7 @@ let theme = 1;
 
 document.getElementById("themebtns").addEventListener("click", () => {
   if (theme == 1) {
-    document.getElementById("pagestyle").setAttribute("href", "lighttheme.css");
+    document.getElementById("pagestyle").setAttribute("href", "styles.css");
     document.getElementById("sun").style.display = "block";
     document.getElementById("moon").style.display = "none";
     theme = 2;
@@ -86,7 +86,7 @@ document.getElementById("themebtns").addEventListener("click", () => {
 let themeTop = 1;
 document.getElementById("themebtnsTop").addEventListener("click", () => {
   if (themeTop == 1) {
-    document.getElementById("pagestyle").setAttribute("href", "lighttheme.css");
+    document.getElementById("pagestyle").setAttribute("href", "styles.css");
     document.getElementById("topsun").style.display = "block";
     document.getElementById("topmoon").style.display = "none";
     themeTop = 2;
@@ -99,26 +99,26 @@ document.getElementById("themebtnsTop").addEventListener("click", () => {
 });
 
 //test themes side nav
-document.getElementById("darkbluetheme").addEventListener("click", () => {
-  document.getElementById("pagestyle").setAttribute("href", "styles.css");
-});
-document.getElementById("orangetheme").addEventListener("click", () => {
-  document.getElementById("pagestyle").setAttribute("href", "peach.css");
-});
-document.getElementById("greytheme").addEventListener("click", () => {
-  document.getElementById("pagestyle").setAttribute("href", "greytheme.css");
-});
+// document.getElementById("darkbluetheme").addEventListener("click", () => {
+//   document.getElementById("pagestyle").setAttribute("href", "styles.css");
+// });
+// document.getElementById("orangetheme").addEventListener("click", () => {
+//   document.getElementById("pagestyle").setAttribute("href", "peach.css");
+// });
+// document.getElementById("greytheme").addEventListener("click", () => {
+//   document.getElementById("pagestyle").setAttribute("href", "greytheme.css");
+// });
 
 //test themes top nav
-document.getElementById("darkbluethemetop").addEventListener("click", () => {
-  document.getElementById("pagestyle").setAttribute("href", "styles.css");
-});
-document.getElementById("orangethemetop").addEventListener("click", () => {
-  document.getElementById("pagestyle").setAttribute("href", "peach.css");
-});
-document.getElementById("greythemetop").addEventListener("click", () => {
-  document.getElementById("pagestyle").setAttribute("href", "greytheme.css");
-});
+// document.getElementById("darkbluethemetop").addEventListener("click", () => {
+//   document.getElementById("pagestyle").setAttribute("href", "styles.css");
+// });
+// document.getElementById("orangethemetop").addEventListener("click", () => {
+//   document.getElementById("pagestyle").setAttribute("href", "peach.css");
+// });
+// document.getElementById("greythemetop").addEventListener("click", () => {
+//   document.getElementById("pagestyle").setAttribute("href", "greytheme.css");
+// });
 
 //reveal on scroll
 

@@ -12,6 +12,17 @@
   --data-ui: rgba(255, 217, 0, 0.664);
 }
 
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #242424;
+}
+body::-webkit-scrollbar-thumb {
+  background: white;
+}
 
 * {
   margin: 0;
@@ -146,20 +157,17 @@ h2 {
 /*top nav*/
 #topNav {
   background-color: var(--dark-theme);
-  
+
   position: fixed;
   right: 0;
   border-radius: 100% 0% 0% 100% / 0% 0% 100% 100%;
-  
+
   transition: 0.5s;
-  transition-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   width: 600px;
   height: 600px;
   transform-origin: top right;
   scale: 0;
-  
-
-  
 
   display: flex;
   flex-direction: column;
@@ -170,9 +178,9 @@ h2 {
   z-index: 2;
   overflow: hidden;
 
-  -webkit-box-shadow: -20px 21px 57px -10px rgba(0,0,0,0.57);
--moz-box-shadow: -20px 21px 57px -10px rgba(0,0,0,0.57);
-box-shadow: -20px 21px 57px -10px rgba(0,0,0,0.57);
+  -webkit-box-shadow: -20px 21px 57px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: -20px 21px 57px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: -20px 21px 57px -10px rgba(0, 0, 0, 0.57);
 }
 
 @media only screen and (max-width: 600px) {
@@ -204,9 +212,9 @@ box-shadow: -20px 21px 57px -10px rgba(0,0,0,0.57);
   z-index: 10;
   overflow: visible;
 
-  -webkit-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
--moz-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
+  -webkit-box-shadow: 10px 10px 36px 8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 10px 10px 36px 8px rgba(0, 0, 0, 0.52);
+  box-shadow: 10px 10px 36px 8px rgba(0, 0, 0, 0.52);
 }
 
 .Topinfo {
@@ -317,9 +325,9 @@ box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
 
   color: var(--dark-theme-font);
 
-  -webkit-box-shadow: 21px 13px 57px -10px rgba(0,0,0,0.35);
-  -moz-box-shadow: 21px 13px 57px -10px rgba(0,0,0,0.35);
-  box-shadow: 21px 13px 57px -10px rgba(0,0,0,0.35);
+  -webkit-box-shadow: 21px 13px 57px -10px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 21px 13px 57px -10px rgba(0, 0, 0, 0.35);
+  box-shadow: 21px 13px 57px -10px rgba(0, 0, 0, 0.35);
 }
 
 #hide {
@@ -386,21 +394,21 @@ box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
   overflow: hidden;
 
   animation: btnblink 5s ease infinite;
-  -webkit-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
--moz-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
-box-shadow: 10px 10px 36px 8px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 36px 8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 10px 10px 36px 8px rgba(0, 0, 0, 0.52);
+  box-shadow: 10px 10px 36px 8px rgb(0, 0, 0);
 }
 
-@keyframes btnblink{
-0%{
-  background-color: rgba(255, 217, 0, 0.596);
-}
-50%{
-  background-color: rgb(255, 217, 0);
-}
-100%{
-  background-color: rgba(255, 217, 0, 0.596);
-}
+@keyframes btnblink {
+  0% {
+    background-color: rgba(255, 217, 0, 0.596);
+  }
+  50% {
+    background-color: rgb(255, 217, 0);
+  }
+  100% {
+    background-color: rgba(255, 217, 0, 0.596);
+  }
 }
 
 .info:hover {
@@ -806,6 +814,7 @@ h2 {
 }
 
 .services li {
+  margin: 10px;
   margin-left: 20px;
 }
 
@@ -901,7 +910,6 @@ h2 {
   width: 98%;
   margin-left: 10px;
   margin-bottom: -30px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -915,6 +923,8 @@ h2 {
 
 .progress {
   margin: 10px;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .progress-bar {
@@ -1070,9 +1080,9 @@ h3 {
 figure.effect-goliath {
   /* background: #df4e4e; */
   background: var(--dark-theme);
-  -webkit-box-shadow: 8px 22px 36px -3px rgba(0,0,0,1);
-  -moz-box-shadow: 8px 22px 36px -3px rgba(0,0,0,1);
-  box-shadow: 8px 22px 36px -3px rgba(0,0,0,1);
+  -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 1);
+  box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 1);
 }
 
 figure.effect-goliath img,
@@ -1175,15 +1185,13 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
- border-radius: 20px;
- -webkit-box-shadow: 8px 22px 36px -3px rgba(0,0,0,1);
--moz-box-shadow: 8px 22px 36px -3px rgba(0,0,0,1);
-box-shadow: 8px 22px 36px -3px rgba(0,0,0,1);
+  border-radius: 20px;
+  -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 1);
+  box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 1);
 }
 
-
-
-.sec2 input{
+.sec2 input {
   color: white;
   width: 90%;
   background-color: var(--dark-theme);
@@ -1191,38 +1199,36 @@ box-shadow: 8px 22px 36px -3px rgba(0,0,0,1);
   border: none;
   margin: 10px;
 
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
-#textarea{
-  color:white ;
+#textarea {
+  color: white;
   width: 90%;
   outline: none;
   border: none;
   background-color: var(--dark-theme);
-  font-family: 'Manrope', sans-serif;
-
+  font-family: "Manrope", sans-serif;
 }
 
-.button{
+.button {
   background-color: var(--dark-theme);
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   scale: 1.2;
   margin-top: 10px;
   border: none;
   padding: 10px;
   border-radius: 45%;
   color: white;
-  -webkit-box-shadow: 8px 22px 36px -3px rgba(0,0,0,0.34);
-  -moz-box-shadow: 8px 22px 36px -3px rgba(0,0,0,0.34);
-  box-shadow: 8px 22px 36px -3px rgba(0,0,0,0.34);
+  -webkit-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.34);
+  -moz-box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.34);
+  box-shadow: 8px 22px 36px -3px rgba(0, 0, 0, 0.34);
 }
 
-#plane{
+#plane {
   font-size: 20px;
   border-radius: 50%;
 }
-
 
 .connect header {
   font-size: 3em;
@@ -1256,16 +1262,14 @@ box-shadow: 8px 22px 36px -3px rgba(0,0,0,1);
   padding: 0.3em 0.5em;
   border-radius: 50%;
   transition: 0.3s;
-
-  
 }
 
 .footerSocial a {
   padding: 4px 5px 5px 5px;
   border-radius: 50%;
-  -webkit-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
--moz-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
-box-shadow: 10px 10px 36px 8px rgba(0,0,0,0.52);
+  -webkit-box-shadow: 10px 10px 36px 8px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 10px 10px 36px 8px rgba(0, 0, 0, 0.52);
+  box-shadow: 10px 10px 36px 8px rgba(0, 0, 0, 0.52);
 }
 
 @media only screen and (max-width: 600px) {
